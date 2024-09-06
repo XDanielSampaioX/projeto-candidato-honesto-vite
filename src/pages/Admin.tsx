@@ -1,16 +1,12 @@
 import { useContext, useState } from "react";
 import { InputContext } from "../hooks/contexts/InputContext";
-import { BrowserRouter as Router} from "react-router-dom";
 
 import CandidatosContext from "../hooks/contexts/CandidatosContext";
 
 import Tbody from "../components/Tbody";
-import Menu from "../components/Menu";
 import Modal from "../components/Modal";
 
 export default function Admin() {
-
-
 
   const { candidatos, postCandidato } = useContext(CandidatosContext);
   const { termoDeBusca } = useContext(InputContext);
@@ -53,9 +49,7 @@ export default function Admin() {
 
   return (
     <>
-      <Router>
         <header className="flex flex-col items-center max-w-screen">
-          <Menu />
           <div className="flex flex-col items-center space-y-6 py-3 relative">
             <div className="flex gap-5">
               <h1 className="text-3xl text-white font-bold">Administração de Candidatos</h1>
@@ -70,7 +64,6 @@ export default function Admin() {
                   <th className="w-1/6">Ações</th>
                 </tr>
               </thead>
-              <tbody>
                 {registrosFiltrados.length > 0 ? (
                   registrosFiltrados.map((candidato, index) => (
                     <Tbody
@@ -92,7 +85,6 @@ export default function Admin() {
                     />
                   ))
                 )}
-              </tbody>
             </table>
           </div>
           <Modal abrirModal={modalAberto} fecharModal={fecharModal}>
@@ -149,7 +141,6 @@ export default function Admin() {
             </div>
           </Modal>
         </header>
-      </Router>
     </>
   );
 }

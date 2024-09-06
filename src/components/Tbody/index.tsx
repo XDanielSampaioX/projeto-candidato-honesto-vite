@@ -6,7 +6,7 @@ import CandidatosContext from "../../hooks/contexts/CandidatosContext";
 export default function Tbody(props: Candidato) {
 
   const { postCandidato } = useContext(CandidatosContext);
-  
+
   const [modalAberto, setModalAberto] = useState(false);
 
   // Estados para armazenar os valores dos campos
@@ -50,11 +50,9 @@ export default function Tbody(props: Candidato) {
           <td className="w-1/6 font-semibold">{props.nome}</td>
           <td className="w-1/6 ">{props.numero}</td>
           <td className="w-1/4">{props.biografia}</td>
-          <td className="w-1/6">
-            <div className="flex justify-center h-9 gap-1">
-              <button onClick={abrirModal} className="bg-teal-800 p-2 rounded-lg"><FaPen /></button>
-              <button className="bg-red-700 p-2 rounded-lg"><FaTrash /></button>
-            </div>
+          <td className="w-1/6 flex justify-center h-9 gap-1">
+            <button onClick={abrirModal} className="bg-teal-800 p-2 rounded-lg"><FaPen /></button>
+            <button className="bg-red-700 p-2 rounded-lg"><FaTrash /></button>
           </td>
         </tr>
       </tbody>
@@ -62,7 +60,7 @@ export default function Tbody(props: Candidato) {
       <Modal abrirModal={modalAberto} fecharModal={fecharModal}>
         <div className="flex flex-col justify-center bg-blue-900 text-black items-center gap-3 mb-4 -m-5">
           <h2 className="text-xl font-semibold">Formulário de Cadastro</h2>
-          
+
           <form onSubmit={handleSubmit}>
             <div>
               <label htmlFor="nome">Nome</label>

@@ -1,16 +1,11 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Admin from './pages/Admin';
-import Home from './pages/Home';
+import Menu from './components/Menu';
+import Content from './pages/Content';
 
 export default function App() {
   return (
-    <Router>
-      <div className="bg-blue-950 p-3">
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/admin" element={<Admin />} />
-        </Routes>
+      <div className="bg-blue-950 p-3 m-auto flex flex-col items-center justify-center">
+        <Menu />
+        <Content />
       </div>
-    </Router>
   );
 }

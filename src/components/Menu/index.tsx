@@ -18,7 +18,7 @@ export default function Menu() {
                 <nav className="text-white font-semibold">
                     <ul className="flex gap-10">
                         <li>
-                            <Link to="/home">Home</Link>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
                             <Link to="/admin">Admin</Link>
