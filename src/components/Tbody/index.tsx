@@ -5,12 +5,13 @@ import CandidatosContext from "../../hooks/contexts/CandidatosContext";
 
 export default function Tbody(props: Candidato) {
 
-  const { postCandidato } = useContext(CandidatosContext);
+  const { putCandidato } = useContext(CandidatosContext);
 
   const [modalAberto, setModalAberto] = useState(false);
 
   // Estados para armazenar os valores dos campos
   const [formData, setFormData] = useState<Candidato>({
+    id: "",
     nome: "",
     numero: "",
     biografia: "",
@@ -21,6 +22,7 @@ export default function Tbody(props: Candidato) {
   useEffect(() => {
     if (modalAberto) {
       setFormData({
+        id: props.id || "",
         nome: props.nome || "",
         numero: props.numero || "",
         biografia: props.biografia || "",
@@ -36,7 +38,7 @@ export default function Tbody(props: Candidato) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    postCandidato(formData);
+    putCandidato(formData);
     fecharModal();
   };
 
@@ -47,6 +49,7 @@ export default function Tbody(props: Candidato) {
     <>
       <tbody className="flex flex-col space-y-4">
         <tr className="flex text-center justify-between p-3">
+          <td className="w-1/6 font-semibold">{props.id}</td>
           <td className="w-1/6 font-semibold">{props.nome}</td>
           <td className="w-1/6 ">{props.numero}</td>
           <td className="w-1/4">{props.biografia}</td>

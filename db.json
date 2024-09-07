@@ -9,17 +9,17 @@
     },
     {
       "id": "2",
-      "nome": "Carlos Pereira",
+      "nome": "Carlos Pereira sampaio",
       "numero": 5678,
       "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
       "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
     },
     {
       "id": "3",
-      "nome": "Maria Souza",
-      "numero": 9101,
-      "biografia": "Maria Souza é uma médica com foco em políticas públicas de saúde, atuando principalmente na prevenção de doenças.",
-      "propostas": "Ampliar o acesso aos serviços de saúde básica; Implementar programas de prevenção contra doenças crônicas; Garantir atendimento de qualidade em hospitais públicos."
+      "nome": "Carlos Pereira sam",
+      "numero": 5678,
+      "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
+      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
     },
     {
       "id": "4",
@@ -69,69 +69,6 @@
       "numero": 4455,
       "biografia": "Ricardo Mendes é um ex-policial militar que busca fortalecer a segurança pública com foco na prevenção ao crime.",
       "propostas": "Aumentar o efetivo policial nas áreas mais vulneráveis; Investir em programas de ressocialização de ex-detentos; Criar campanhas de conscientização contra a violência."
-    },
-    {
-      "id": "252a",
-      "nome": "Marcio Fonseca da Silva",
-      "numero": "4321",
-      "biografia": "Graduado em Administração. Atualmente é assistente administrativo no Programa de Pós-Graduação em Direito Constitucional Mestrado e Doutorado da Universidade de Fortaleza-UNIFOR.",
-      "propostas": "knjcbnkcbk"
-    },
-    {
-      "id": "f403",
-      "nome": "danielS",
-      "numero": 1234,
-      "biografia": "Graduado em Administração. Atualmente é assistente administrativo no Programa de Pós-Graduação em Direito Constitucional Mestrado e Doutorado da Universidade de Fortaleza-UNIFOR.",
-      "propostas": "Gostoso"
-    },
-    {
-      "id": "4ac7",
-      "nome": "Marcio Fonseca ",
-      "numero": 1234,
-      "biografia": "Graduado em Administração. Atualmente é assistente administrativo no Programa de Pós-Graduação em Direito Constitucional Mestrado e Doutorado da Universidade de Fortaleza-UNIFOR.",
-      "propostas": ""
-    },
-    {
-      "id": "37c7",
-      "nome": "Marcio Fonseca da Silva",
-      "numero": "4444",
-      "biografia": "hhhhhhhhhhhhhhh",
-      "propostas": "jjjjjjjjjjjjjjjjjjjjjjjjjjj"
-    },
-    {
-      "id": "c570",
-      "nome": "aaaaaaaaaaaaaaaa",
-      "numero": "4444",
-      "biografia": "hhhhhhhhhhhhhhh",
-      "propostas": "jjjjjjjjjjjjjjjjjjjjjjjjjjj"
-    },
-    {
-      "id": "a4c3",
-      "nome": "gg",
-      "numero": "77777",
-      "biografia": "54546454",
-      "propostas": "456545646"
-    },
-    {
-      "id": "b1a3",
-      "nome": "Eu sou foda",
-      "numero": "171717",
-      "biografia": "Sou foda pra carai",
-      "propostas": "valeu"
-    },
-    {
-      "id": "1c74",
-      "nome": "fonseca da Silva",
-      "numero": "888888",
-      "biografia": "marcio",
-      "propostas": "zzzzzzzzzzzzzzzzz"
-    },
-    {
-      "id": "a118",
-      "nome": "aaaa",
-      "numero": "aaaa",
-      "biografia": "aaaa",
-      "propostas": "aaaa"
     }
   ]
 }

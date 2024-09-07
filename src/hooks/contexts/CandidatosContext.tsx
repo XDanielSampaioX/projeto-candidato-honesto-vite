@@ -3,70 +3,66 @@ import axios from 'axios';
 
 type CandidatosContextType = {
     candidatos: Candidato[],
-    postCandidato: (newCandidatos: Candidato) => Promise<void>;
-    putCandidato: (newCandidatos: Candidato) => Promise<void>;
+    postCandidato: (newCandidato: Candidato) => Promise<void>;
+    putCandidato: (candidato: Candidato) => Promise<void>;
 }
 
 type CandidatosContextProps = {
-    children: React.ReactNode
+    children: React.ReactNode;
 }
 
-const initializeValue: CandidatosContextType = {
-    candidatos: [],
-    // inicializando a promise vazia
-    postCandidato: async () => { },
-    putCandidato: async () => { },
-};
-
-const CandidatosContext = createContext<CandidatosContextType>(initializeValue);
+const CandidatosContext = createContext<CandidatosContextType>(
+    {
+        candidatos: [],
+        postCandidato: async () => {},
+        putCandidato: async () => {},
+    }
+);
 
 export const CandidatosContextProvider = ({ children }: CandidatosContextProps) => {
-    const [candidatos, setCandidatos] = useState<Candidato[]>([])
+    const [candidatos, setCandidatos] = useState<Candidato[]>([]);
 
     // GET
-
     const fetchCandidatos = async () => {
         try {
-            const response = await axios.get<Candidato[]>(`http://localhost:3000/candidatos`)
-            setCandidatos(response.data)
+            const response = await axios.get<Candidato[]>(`http://localhost:3000/candidatos`);
+            setCandidatos(response.data);
         } catch (error) {
-            console.log("erroror ao buscar os candidatos" + error);
+            console.log("Erro ao buscar os candidatos:", error);
         }
     };
+
     useEffect(() => {
         fetchCandidatos();
     }, []);
 
-
     // POST
-    const postCandidato = async (candidatos: Candidato) => {
+    const postCandidato = async (candidato: Candidato) => {
         try {
-            await axios.post(`http://localhost:3000/candidatos`, candidatos)
+            await axios.post(`http://localhost:3000/candidatos`, candidato);
             fetchCandidatos();
         } catch (error) {
-            console.log("erro ao adicionar candidato", error)
+            console.log("Erro ao adicionar candidato:", error);
         }
-    }
+    };
 
     // PUT
-    const putCandidato = async (candidatos: Candidato) => {
+    const putCandidato = async (candidato: Candidato) => {
+
         try {
-            await axios.put(`http://localhost:3000/candidatos/${candidatos.id}`, candidatos)
+            await axios.put(`http://localhost:3000/candidatos/${candidato.id}`, candidato);
+            console.log(candidato.id)
             fetchCandidatos();
         } catch (error) {
-            console.log("Erro ao atualizar candidato:", error)
+            console.log("Erro ao atualizar candidato:", error);
         }
-    }
-
+    };
 
     return (
-        <CandidatosContext.Provider value=
-            {
-                { candidatos, postCandidato, putCandidato  }
-            }
-        >{children}</CandidatosContext.Provider>
-    )
+        <CandidatosContext.Provider value={{ candidatos, postCandidato, putCandidato}}>
+            {children}
+        </CandidatosContext.Provider>
+    );
 }
 
 export default CandidatosContext;
-

@@ -4,4 +4,5 @@ declare type Candidato = {
     numero: string,
     biografia: string,
     propostas?: string,
+    sugestoes?: string;
 }
