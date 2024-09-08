@@ -8,9 +8,12 @@ import Modal from "../components/Modal";
 
 export default function Admin() {
 
-  const { candidatos, postCandidato } = useContext(CandidatosContext);
+  const { candidatos, postCandidato, deleteCandidato } = useContext(CandidatosContext);
   const { termoDeBusca } = useContext(InputContext);
 
+  const handleDelete = (id: number) => {
+    deleteCandidato(id)
+  }
 
   // Estados para armazenar os valores dos campos
   const [formData, setFormData] = useState<Candidato>({
@@ -81,7 +84,9 @@ export default function Admin() {
                   numero={candidato.numero}
                   biografia={candidato.biografia}
                   propostas={candidato.propostas}
+                  onDelete={handleDelete}
                 />))}
+                
           </table>
         </div>
         <Modal abrirModal={modalAberto} fecharModal={fecharModal}>

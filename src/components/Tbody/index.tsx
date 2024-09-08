@@ -4,10 +4,16 @@ import { useContext, useState, useEffect } from "react";
 import CandidatosContext from "../../hooks/contexts/CandidatosContext";
 
 export default function Tbody(props: Candidato) {
-
-  const { putCandidato } = useContext(CandidatosContext);
+  const { putCandidato, deleteCandidato } = useContext(CandidatosContext);
 
   const [modalAberto, setModalAberto] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
   // Estados para armazenar os valores dos campos
   const [formData, setFormData] = useState<Candidato>({
@@ -31,10 +37,6 @@ export default function Tbody(props: Candidato) {
     }
   }, [modalAberto, props]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -45,6 +47,10 @@ export default function Tbody(props: Candidato) {
   const abrirModal = () => setModalAberto(true);
   const fecharModal = () => setModalAberto(false);
 
+  const handleDelete = () => {
+    deleteCandidato(props.id);
+  };
+
   return (
     <>
       <tbody className="flex flex-col space-y-4">
@@ -54,8 +60,12 @@ export default function Tbody(props: Candidato) {
           <td className="w-1/6 ">{props.numero}</td>
           <td className="w-1/4">{props.biografia}</td>
           <td className="w-1/6 flex justify-center h-9 gap-1">
-            <button onClick={abrirModal} className="bg-teal-800 p-2 rounded-lg"><FaPen /></button>
-            <button className="bg-red-700 p-2 rounded-lg"><FaTrash /></button>
+            <button onClick={abrirModal} className="bg-teal-800 p-2 rounded-lg">
+              <FaPen />
+            </button>
+            <button onClick={handleDelete} className="bg-red-700 p-2 rounded-lg">
+              <FaTrash />
+            </button>
           </td>
         </tr>
       </tbody>

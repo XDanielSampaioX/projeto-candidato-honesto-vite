@@ -12,15 +12,6 @@ type CandidatosContextProps = {
     children: React.ReactNode;
 }
 
-const deleteCandidato = async (id: number) => {
-    try {
-      await axios.delete(`http://localhost:3000/candidatos/${id}`);
-      fetchCandidatos(); // Atualiza a lista após a exclusão
-    } catch (error) {
-      console.log("Erro ao deletar candidato:", error);
-    }
-  };
-
 const CandidatosContext = createContext<CandidatosContextType>(
     {
         candidatos: [],
@@ -66,6 +57,16 @@ export const CandidatosContextProvider = ({ children }: CandidatosContextProps) 
             fetchCandidatos();
         } catch (error) {
             console.log("Erro ao atualizar candidato:", error);
+        }
+    };
+
+      // DELETE
+      const deleteCandidato = async (id: number) => {
+        try {
+            await axios.delete(`http://localhost:3000/candidatos/${id}`);
+            fetchCandidatos(); // Atualiza a lista após a exclusão
+        } catch (error) {
+            console.log("Erro ao deletar candidato:", error);
         }
     };
 

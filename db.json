@@ -1,13 +1,6 @@
 {
   "candidatos": [
     {
-      "id": "1",
-      "nome": "Marcio Fonseca da Silva?",
-      "numero": 1234,
-      "biografia": "Graduado em Administração. Atualmente é assistente administrativo no Programa de Pós-Graduação em Direito Constitucional Mestrado e Doutorado da Universidade de Fortaleza-UNIFOR.",
-      "propostas": "Investir em educação básica de qualidade; Expandir o acesso a programas de alfabetização para adultos; Promover a formação contínua dos professores."
-    },
-    {
       "id": "2",
       "nome": "Carlos Pereira sampaio",
       "numero": 5678,
@@ -62,27 +55,6 @@
       "numero": 2233,
       "biografia": "Fernanda Alves é uma jornalista e defensora da liberdade de expressão e dos direitos civis.",
       "propostas": "Garantir a transparência nas ações governamentais; Defender a liberdade de imprensa; Promover políticas de proteção à privacidade dos cidadãos."
-    },
-    {
-      "id": "10",
-      "nome": "Ricardo Mendes",
-      "numero": 4455,
-      "biografia": "Ricardo Mendes é um ex-policial militar que busca fortalecer a segurança pública com foco na prevenção ao crime.",
-      "propostas": "Aumentar o efetivo policial nas áreas mais vulneráveis; Investir em programas de ressocialização de ex-detentos; Criar campanhas de conscientização contra a violência."
-    },
-    {
-      "id": "2bb3",
-      "nome": "Cara do bem",
-      "numero": "666",
-      "biografia": "#Confia",
-      "propostas": "Acabar com tudo que ta aí."
-    },
-    {
-      "id": "14ee",
-      "nome": "werwr",
-      "numero": "",
-      "biografia": "",
-      "propostas": ""
     }
   ]
 }
