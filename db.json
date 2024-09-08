@@ -34,20 +34,6 @@
       "numero": 5566,
       "biografia": "Rafael Lima é um economista com ampla experiência em gestão pública e desenvolvimento econômico.",
       "propostas": "Aumentar o investimento em infraestrutura; Criar políticas para redução do desemprego; Promover a inclusão social através de programas de renda mínima."
-    },
-    {
-      "id": "7",
-      "nome": "Beatriz Fernandes",
-      "numero": 7788,
-      "biografia": "Beatriz Fernandes é uma socióloga focada em políticas de igualdade de gênero e defesa dos direitos das mulheres.",
-      "propostas": "Implementar políticas de igualdade salarial; Ampliar o acesso a creches para mães trabalhadoras; Combater a violência doméstica com políticas públicas eficientes."
-    },
-    {
-      "id": "8",
-      "nome": "Eduardo Gomes",
-      "numero": 9911,
-      "biografia": "Eduardo Gomes é um professor universitário e pesquisador em políticas públicas de educação e ciência.",
-      "propostas": "Investir em pesquisa científica e tecnológica; Aumentar o financiamento para universidades públicas; Promover a inclusão digital nas escolas."
     }
   ]
 }
