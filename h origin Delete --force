@@ -1,0 +1,53 @@
+[33mcommit 196b9136368f5de5fe53350eae7c72daa74c5515[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mDelete[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31morigin/Delete[m[33m, [m[1;32mmain[m[33m)[m
+Author: Sávio Limão <saviolimao@hotmail.com>
+Date:   Sun Sep 8 14:17:29 2024 -0300
+
+    delte-Working-2
+
+[33mcommit 55d46bf13e665f3de73f02c93a8555ca558d414b[m
+Author: Sávio Limão <saviolimao@hotmail.com>
+Date:   Sun Sep 8 14:16:33 2024 -0300
+
+    Dele-WORKING-merge
+
+[33mcommit 402764cc5509695e2b6f0f6a15c0cbf6e7de5e1d[m
+Author: Sávio Limão <saviolimao@hotmail.com>
+Date:   Sun Sep 8 14:11:08 2024 -0300
+
+    btn-delete-WORKING
+
+[33mcommit 398dfba786a74c235362bb3e0a6cae422c02cfb2[m
+Author: Sávio Limão <saviolimao@hotmail.com>
+Date:   Sat Sep 7 10:11:36 2024 -0300
+
+    contexto-criado
+
+[33mcommit f2a4be4024898ced4276123da42de1a033715749[m
+Author: Daniel Sampaio <danielsampaio127@gmail.com>
+Date:   Fri Sep 6 22:52:55 2024 -0300
+
+    feat: Implementando requisição PUT
+
+[33mcommit 45e258b5cb5195df1204804233cd9f1f131bb72b[m
+Author: Daniel Sampaio <danielsampaio127@gmail.com>
+Date:   Fri Sep 6 20:20:06 2024 -0300
+
+    feat: Ajustando rota
+
+[33mcommit eec56b37f9354c3e31e0f9c57bdc6e9556111e68[m
+Author: Daniel Sampaio <danielsampaio127@gmail.com>
+Date:   Fri Sep 6 20:17:31 2024 -0300
+
+    feat: Implementando react-router-dom
+
+[33mcommit fb1c27d917c3704c9aaa7632c7f792c4e40d70c6[m
+Author: Daniel Sampaio <danielsampaio127@gmail.com>
+Date:   Fri Sep 6 00:59:00 2024 -0300
+
+    feat: Migrando projeto
+
+[33mcommit 08cdff3c71f6fea5fc079b9ebce27cac496dea64[m
+Author: Daniel Sampaio <109830182+XDanielSampaioX@users.noreply.github.com>
+Date:   Fri Sep 6 00:50:43 2024 -0300
+
+    Initial commit
