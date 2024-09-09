@@ -1,13 +1,6 @@
 {
   "candidatos": [
     {
-      "id": "1",
-      "nome": "Marcio Fonseca da Silva",
-      "numero": 1234,
-      "biografia": "Graduado em Administração. Atualmente é assistente administrativo no Programa de Pós-Graduação em Direito Constitucional Mestrado e Doutorado da Universidade de Fortaleza-UNIFOR.",
-      "propostas": "Investir em educação básica de qualidade; Expandir o acesso a programas de alfabetização para adultos; Promover a formação contínua dos professores."
-    },
-    {
       "id": "2",
       "nome": "Carlos Pereira Sampaio",
       "numero": 5678,
@@ -41,34 +34,6 @@
       "numero": 5566,
       "biografia": "Rafael Lima é um economista com ampla experiência em gestão pública e desenvolvimento econômico.",
       "propostas": "Aumentar o investimento em infraestrutura; Criar políticas para redução do desemprego; Promover a inclusão social através de programas de renda mínima."
-    },
-    {
-      "id": "7",
-      "nome": "Beatriz Fernandes",
-      "numero": 7788,
-      "biografia": "Beatriz Fernandes é uma socióloga focada em políticas de igualdade de gênero e defesa dos direitos das mulheres.",
-      "propostas": "Implementar políticas de igualdade salarial; Ampliar o acesso a creches para mães trabalhadoras; Combater a violência doméstica com políticas públicas eficientes."
-    },
-    {
-      "id": "8",
-      "nome": "Eduardo Gomes",
-      "numero": 9911,
-      "biografia": "Eduardo Gomes é um professor universitário e pesquisador em políticas públicas de educação e ciência.",
-      "propostas": "Investir em pesquisa científica e tecnológica; Aumentar o financiamento para universidades públicas; Promover a inclusão digital nas escolas."
-    },
-    {
-      "id": "9",
-      "nome": "Fernanda Alves",
-      "numero": 2233,
-      "biografia": "Fernanda Alves é uma jornalista e defensora da liberdade de expressão e dos direitos civis.",
-      "propostas": "Garantir a transparência nas ações governamentais; Defender a liberdade de imprensa; Promover políticas de proteção à privacidade dos cidadãos."
-    },
-    {
-      "id": "10",
-      "nome": "Ricardo Mendes",
-      "numero": 4455,
-      "biografia": "Ricardo Mendes é um ex-policial militar que busca fortalecer a segurança pública com foco na prevenção ao crime.",
-      "propostas": "Aumentar o efetivo policial nas áreas mais vulneráveis; Investir em programas de ressocialização de ex-detentos; Criar campanhas de conscientização contra a violência."
     }
   ]
 }

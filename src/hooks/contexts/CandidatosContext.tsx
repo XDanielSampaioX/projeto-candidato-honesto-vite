@@ -5,6 +5,7 @@ type CandidatosContextType = {
     candidatos: Candidato[],
     postCandidato: (newCandidato: Candidato) => Promise<void>;
     putCandidato: (candidato: Candidato) => Promise<void>;
+    deleteCandidato: (id: number) => Promise<void>
 }
 
 type CandidatosContextProps = {
@@ -16,6 +17,7 @@ const CandidatosContext = createContext<CandidatosContextType>(
         candidatos: [],
         postCandidato: async () => {},
         putCandidato: async () => {},
+        deleteCandidato: async () => {},
     }
 );
 
@@ -58,8 +60,18 @@ export const CandidatosContextProvider = ({ children }: CandidatosContextProps) 
         }
     };
 
+      // DELETE
+      const deleteCandidato = async (id: number) => {
+        try {
+            await axios.delete(`http://localhost:3000/candidatos/${id}`);
+            fetchCandidatos(); // Atualiza a lista após a exclusão
+        } catch (error) {
+            console.log("Erro ao deletar candidato:", error);
+        }
+    };
+
     return (
-        <CandidatosContext.Provider value={{ candidatos, postCandidato, putCandidato}}>
+        <CandidatosContext.Provider value={{ candidatos, postCandidato, putCandidato, deleteCandidato}}>
             {children}
         </CandidatosContext.Provider>
     );
