@@ -33,12 +33,20 @@
       "propostas": "Defender os direitos das minorias; Promover a igualdade de oportunidades no mercado de trabalho; Reformar o sistema judiciário para torná-lo mais acessível."
     },
     {
-      "id": "cb2c",
-      "nome": "Daniel Sampaio",
-      "numero": "4848",
-      "partido": "Patido raivoso",
-      "biografia": "Quero destruir tudo",
-      "propostas": "Taca fogo"
+      "id": "",
+      "nome": "Luis inacio",
+      "numero": "13",
+      "partido": "Dos ladrao",
+      "biografia": "FAZ O L",
+      "propostas": "Colocar mais imposto e roubar todo mundo"
+    },
+    {
+      "id": "",
+      "nome": "Fernanda Montenegro",
+      "numero": "3456",
+      "partido": "Partido Social Trabalhista",
+      "biografia": "Filósofa e estudante de gestão política",
+      "propostas": "Melhorias nas vias públicas, saneamento básico de baixos de classe baixa."
     }
   ]
 }

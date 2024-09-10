@@ -42,7 +42,7 @@ export default function Tbody(props: Candidato) {
           <td className="w-1/6 font-semibold">{props.nome}</td>
           <td className="w-1/6 ">{props.numero}</td>
           <td className="w-1/4 ">{props.partido}</td>
-          <td className="w-1/4">{props.biografia}</td>
+          <td className="w-1/4">{props.propostas}</td>
           <td className="w-1/6 flex justify-center h-9 gap-1">
             <button onClick={abrirModal} className="bg-teal-800 p-2 rounded-lg">
               <FaPen />
@@ -56,11 +56,11 @@ export default function Tbody(props: Candidato) {
 
       <Modal abrirModal={modalAberto} fecharModal={fecharModal}>
         <div className="flex flex-col justify-center bg-blue-900 text-black items-center gap-4 p-3 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-semibold mb-3 text-white">Formulário de Cadastro</h2>
+          <h2 className="text-2xl font-semibold mb-3">Formulário de Cadastro</h2>
 
           <form onSubmit={handleSubmit} className="w-full max-w-md">
             <div className="mb-2">
-              <label htmlFor="nome" className="block text-sm font-medium mb-1 text-white">Nome</label>
+              <label htmlFor="nome" className="block text-sm font-medium mb-1">Nome</label>
               <input
                 id="nome"
                 name="nome"
@@ -71,7 +71,7 @@ export default function Tbody(props: Candidato) {
             </div>
 
             <div className="mb-2">
-              <label htmlFor="numero" className="block text-sm font-medium mb-1 text-white">Número</label>
+              <label htmlFor="numero" className="block text-sm font-medium mb-1 ">Número</label>
               <input
                 id="numero"
                 name="numero"
