@@ -12,7 +12,7 @@ export default function Menu() {
     };
 
     return (
-        <div className="flex justify-around items-center w-full m-auto -mx-5 bg-blue-900 rounded-md gap-10 p-4">
+        <div className="flex justify-around items-center w-full m-auto -mx-5 bg-blue-900 gap-10 p-4 top-0 fixed">
             <div className="flex items-center gap-14">
                 <div className="w-12"> <img src="../../../public/LOGO.png" alt="logo" /></div>
                 <nav className="text-white font-semibold">

@@ -56,11 +56,11 @@ export default function Tbody(props: Candidato) {
 
       <Modal abrirModal={modalAberto} fecharModal={fecharModal}>
         <div className="flex flex-col justify-center bg-blue-900 text-black items-center gap-4 p-3 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-semibold mb-3">Formulário de Cadastro</h2>
+          <h2 className="text-2xl font-semibold mb-3 text-white">Formulário de Cadastro</h2>
 
           <form onSubmit={handleSubmit} className="w-full max-w-md">
             <div className="mb-2">
-              <label htmlFor="nome" className="block text-sm font-medium mb-1">Nome</label>
+              <label htmlFor="nome" className="block text-sm font-medium mb-1 text-white">Nome</label>
               <input
                 id="nome"
                 name="nome"
@@ -71,7 +71,7 @@ export default function Tbody(props: Candidato) {
             </div>
 
             <div className="mb-2">
-              <label htmlFor="numero" className="block text-sm font-medium mb-1">Número</label>
+              <label htmlFor="numero" className="block text-sm font-medium mb-1 text-white">Número</label>
               <input
                 id="numero"
                 name="numero"
@@ -82,7 +82,7 @@ export default function Tbody(props: Candidato) {
             </div>
 
             <div className="mb-2">
-              <label htmlFor="partido" className="block text-sm font-medium mb-1">Partido</label>
+              <label htmlFor="partido" className="block text-sm font-medium mb-1 text-white">Partido</label>
               <input
                 id="partido"
                 name="partido"
@@ -93,7 +93,7 @@ export default function Tbody(props: Candidato) {
             </div>
 
             <div className="mb-2">
-              <label htmlFor="biografia" className="block text-sm font-medium mb-1">Biografia</label>
+              <label htmlFor="biografia" className="block text-sm font-medium mb-1 text-white">Biografia</label>
               <textarea
                 id="biografia"
                 name="biografia"
@@ -104,7 +104,7 @@ export default function Tbody(props: Candidato) {
             </div>
 
             <div className="mb-4">
-              <label htmlFor="propostas" className="block text-sm font-medium mb-1">Propostas</label>
+              <label htmlFor="propostas" className="block text-sm font-medium mb-1 text-white">Propostas</label>
               <textarea
                 id="propostas"
                 name="propostas"
