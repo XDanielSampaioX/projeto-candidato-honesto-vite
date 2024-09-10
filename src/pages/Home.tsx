@@ -20,6 +20,7 @@ export default function Home() {
                 key={candidato.id}
                 nome={candidato.nome}
                 numero={candidato.numero}
+                partido={candidato.partido}
                 biografia={candidato.biografia}
                 propostas={candidato.propostas}
               />
@@ -28,6 +29,7 @@ export default function Home() {
                 key={candidato.id}
                 nome={candidato.nome}
                 numero={candidato.numero}
+                partido={candidato.partido}
                 biografia={candidato.biografia}
                 propostas={candidato.propostas}
               />))}

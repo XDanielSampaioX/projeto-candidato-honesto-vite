@@ -18,7 +18,10 @@ export default function Card(props: Candidato) {
                     </div>
                     <div className="flex flex-col items-center pt-28">
                         <div className="font-bold text-lg">{props.nome}</div>
-                        <div>{props.numero}</div>
+                        <div className="flex flex-col">
+                            <div>{props.numero}</div>
+                            <div>{props.partido}</div>
+                        </div>
                         <div className="p-2">{props.propostas}</div>
                     </div>
                 </div>
@@ -29,6 +32,7 @@ export default function Card(props: Candidato) {
                     <div className="w-20 h-20 bg-black rounded-full" />
                     <p className="text-xl font-semibold">{props.nome}</p>
                     <p>Número do partido: {props.numero}</p>
+                    <p>Partido: {props.partido}</p>
                     <p>{props.biografia}</p>
                     <p>{props.propostas}</p>
                 </div>

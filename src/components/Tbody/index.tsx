@@ -20,6 +20,7 @@ export default function Tbody(props: Candidato) {
     id: "",
     nome: "",
     numero: "",
+    partido: "",
     biografia: "",
     propostas: "",
   });
@@ -31,6 +32,7 @@ export default function Tbody(props: Candidato) {
         id: props.id || "",
         nome: props.nome || "",
         numero: props.numero || "",
+        partido: props.partido || "",
         biografia: props.biografia || "",
         propostas: props.propostas || "",
       });
@@ -47,23 +49,20 @@ export default function Tbody(props: Candidato) {
   const abrirModal = () => setModalAberto(true);
   const fecharModal = () => setModalAberto(false);
 
-  const handleDelete = () => {
-    deleteCandidato(props.id);
-  };
-
   return (
     <>
       <tbody className="flex flex-col space-y-4">
         <tr className="flex text-center justify-between p-3">
-          <td className="w-1/6 font-semibold">{props.id}</td>
+          <td className="w-1/12 font-semibold">{props.id}</td>
           <td className="w-1/6 font-semibold">{props.nome}</td>
           <td className="w-1/6 ">{props.numero}</td>
+          <td className="w-1/6 ">{props.partido}</td>
           <td className="w-1/4">{props.biografia}</td>
           <td className="w-1/6 flex justify-center h-9 gap-1">
             <button onClick={abrirModal} className="bg-teal-800 p-2 rounded-lg">
               <FaPen />
             </button>
-            <button onClick={handleDelete} className="bg-red-700 p-2 rounded-lg">
+            <button onClick={() => deleteCandidato} className="bg-red-700 p-2 rounded-lg">
               <FaTrash />
             </button>
           </td>
@@ -91,6 +90,16 @@ export default function Tbody(props: Candidato) {
                 id="numero"
                 name="numero"
                 value={formData.numero}
+                onChange={handleChange}
+              />
+            </div>
+
+            <div>
+              <label htmlFor="numero">Partido</label>
+              <input
+                id="partido"
+                name="partido"
+                value={formData.partido}
                 onChange={handleChange}
               />
             </div>

@@ -5,13 +5,14 @@ import CandidatosContext from "../hooks/contexts/CandidatosContext";
 
 import Tbody from "../components/Tbody";
 import Modal from "../components/Modal";
+import Adicionar from "../assets/Adicionar";
 
 export default function Admin() {
 
   const { candidatos, postCandidato, deleteCandidato } = useContext(CandidatosContext);
   const { termoDeBusca } = useContext(InputContext);
 
-  const handleDelete = (id: number) => {
+  const handleDelete = (id : number) => {
     deleteCandidato(id)
   }
 
@@ -19,6 +20,7 @@ export default function Admin() {
   const [formData, setFormData] = useState<Candidato>({
     nome: "",
     numero: "",
+    partido: "",
     biografia: "",
     propostas: "",
   });
@@ -34,6 +36,7 @@ export default function Admin() {
     setFormData({
       nome: "",
       numero: "",
+      partido: "",
       biografia: "",
       propostas: "",
     })
@@ -49,16 +52,17 @@ export default function Admin() {
     <>
       <header className="flex flex-col items-center max-w-screen">
         <div className="flex flex-col items-center space-y-6 py-3">
-          <div className="flex gap-5 items-center">
+          <div className="flex items-center justify-around gap-48">
             <h1 className="text-3xl text-white font-bold max-md:hidden">Administração de Candidatos</h1>
-            <button onClick={abrirModal} className="bg-blue-600 text-white font-semibold rounded-lg p-2 my-2 ">Adicionar Candidato</button>
+            <button onClick={abrirModal} className="flex gap-2 bg-blue-600 text-white font-semibold rounded-lg p-2 my-2"><Adicionar/>Adicionar</button>
           </div>
           <table className="bg-gray-800 text-white rounded-lg shadow-lg w-full mx-auto">
             <thead className="flex justify-center">
               <tr className="flex text-center justify-between bg-gray-700 p-3 rounded-t-lg w-full">
-                <th className="w-2/12">Id</th>
+                <th className="w-1/12">Id</th>
                 <th className="w-1/6">Nome</th>
                 <th className="w-1/6">Número</th>
+                <th className="w-1/6">Partido</th>
                 <th className="w-1/4">Propostas</th>
                 <th className="w-1/6">Ações</th>
               </tr>
@@ -73,6 +77,7 @@ export default function Admin() {
                   id={candidato.id}
                   nome={candidato.nome}
                   numero={candidato.numero}
+                  partido={candidato.partido}
                   biografia={candidato.biografia}
                   propostas={candidato.propostas}
                 />
@@ -82,6 +87,7 @@ export default function Admin() {
                   key={candidato.id}
                   nome={candidato.nome}
                   numero={candidato.numero}
+                  partido={candidato.partido}
                   biografia={candidato.biografia}
                   propostas={candidato.propostas}
                   onDelete={handleDelete}
@@ -109,6 +115,16 @@ export default function Admin() {
                   id="numero"
                   name="numero"
                   value={formData.numero}
+                  onChange={handleChange}
+                  className="p-2 border border-gray-300 rounded"
+                />
+              </div>
+              <div className="flex flex-col">
+                <label htmlFor="numero" className="font-semibold">Número</label>
+                <input
+                  id="partido"
+                  name="partido"
+                  value={formData.partido}
                   onChange={handleChange}
                   className="p-2 border border-gray-300 rounded"
                 />

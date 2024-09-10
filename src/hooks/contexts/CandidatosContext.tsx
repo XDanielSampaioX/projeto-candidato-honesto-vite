@@ -61,7 +61,7 @@ export const CandidatosContextProvider = ({ children }: CandidatosContextProps) 
     };
 
     // DELETE
-    const deleteCandidato = async (id: number) => {
+    const deleteCandidato = async (id : number) => {
         try {
             await axios.delete(`http://localhost:3000/candidatos/${id}`);
             fetchCandidatos(); // Atualiza a lista após a exclusão
