@@ -2,25 +2,17 @@
   "candidatos": [
     {
       "id": "2",
-      "nome": "Carlos Pereira Sampaio",
+      "nome": "Carlos Pereira",
+      "numero": "5678",
       "partido": "Partido da Inovação",
-      "numero": 5678,
       "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
       "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
     },
     {
-      "id": "4",
-      "nome": "João Costa",
-      "partido": "Partido da Justiça Social",
-      "numero": 1122,
-      "biografia": "João Costa é um advogado especializado em direitos humanos e luta por justiça social.",
-      "propostas": "Defender os direitos das minorias; Promover a igualdade de oportunidades no mercado de trabalho; Reformar o sistema judiciário para torná-lo mais acessível."
-    },
-    {
       "id": "5",
-      "nome": "Luciana Oliveira",
-      "partido": "Partido Verde",
+      "nome": "Luciana Oliveira de Sousa",
       "numero": 3344,
+      "partido": "Partido Verde",
       "biografia": "Luciana Oliveira é uma engenheira ambiental comprometida com a sustentabilidade e proteção do meio ambiente.",
       "propostas": "Criar políticas de incentivo à energia renovável; Implementar programas de reciclagem em áreas urbanas; Promover a preservação das florestas e recursos hídricos."
     },
@@ -31,14 +23,6 @@
       "numero": "5678",
       "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
       "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
-    },
-    {
-      "id": "6338",
-      "nome": "Daniel",
-      "numero": "4848",
-      "partido": "PSDB",
-      "biografia": "Louco de nascença",
-      "propostas": "Quebrar tudo"
     }
   ]
 }
