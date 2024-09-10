@@ -8,13 +8,6 @@
       "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
     },
     {
-      "id": "3",
-      "nome": "Carlos Pereira sam",
-      "numero": 5678,
-      "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
-      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
-    },
-    {
       "id": "4",
       "nome": "João Costa",
       "numero": 1122,
@@ -29,11 +22,11 @@
       "propostas": "Criar políticas de incentivo à energia renovável; Implementar programas de reciclagem em áreas urbanas; Promover a preservação das florestas e recursos hídricos."
     },
     {
-      "id": "6",
-      "nome": "Rafael Lima",
-      "numero": 5566,
-      "biografia": "Rafael Lima é um economista com ampla experiência em gestão pública e desenvolvimento econômico.",
-      "propostas": "Aumentar o investimento em infraestrutura; Criar políticas para redução do desemprego; Promover a inclusão social através de programas de renda mínima."
+      "id": "60a8",
+      "nome": "Calos Pereira",
+      "numero": "5678",
+      "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
+      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
     }
   ]
 }
