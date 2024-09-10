@@ -1,28 +1,44 @@
 {
   "candidatos": [
     {
+      "id": "1",
+      "nome": "Marcio Fonseca da Silva",
+      "numero": 1234,
+      "partido": "Partido dos Trabalhadores",
+      "biografia": "Graduado em Administração. Atualmente é assistente administrativo no Programa de Pós-Graduação em Direito Constitucional Mestrado e Doutorado da Universidade de Fortaleza-UNIFOR.",
+      "propostas": "Investir em educação básica de qualidade; Expandir o acesso a programas de alfabetização para adultos; Promover a formação contínua dos professores."
+    },
+    {
       "id": "2",
-      "nome": "Carlos Pereira",
-      "numero": "5678",
-      "partido": "Partido da Inovação",
-      "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
-      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
-    },
-    {
-      "id": "5",
-      "nome": "Luciana Oliveira de Sousa",
-      "numero": 3344,
+      "nome": "Carlos Pereira Sampaio",
+      "numero": 5678,
       "partido": "Partido Verde",
-      "biografia": "Luciana Oliveira é uma engenheira ambiental comprometida com a sustentabilidade e proteção do meio ambiente.",
-      "propostas": "Criar políticas de incentivo à energia renovável; Implementar programas de reciclagem em áreas urbanas; Promover a preservação das florestas e recursos hídricos."
-    },
-    {
-      "id": "60a8",
-      "nome": "Calos Pereira",
-      "partido": "Partido da Inovação",
-      "numero": "5678",
       "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
       "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
+    },
+    {
+      "id": "3",
+      "nome": "Carlos Pereira sam",
+      "numero": 5678,
+      "partido": "Partido Democrata",
+      "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
+      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
+    },
+    {
+      "id": "4",
+      "nome": "João Costa",
+      "numero": 1122,
+      "partido": "Partido dos Trabalhadores",
+      "biografia": "João Costa é um advogado especializado em direitos humanos e luta por justiça social.",
+      "propostas": "Defender os direitos das minorias; Promover a igualdade de oportunidades no mercado de trabalho; Reformar o sistema judiciário para torná-lo mais acessível."
+    },
+    {
+      "id": "cb2c",
+      "nome": "Daniel Sampaio",
+      "numero": "4848",
+      "partido": "Patido raivoso",
+      "biografia": "Quero destruir tudo",
+      "propostas": "Taca fogo"
     }
   ]
 }

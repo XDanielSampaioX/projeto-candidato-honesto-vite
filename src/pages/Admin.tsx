@@ -15,6 +15,7 @@ export default function Admin() {
 
   // Estados para armazenar os valores dos campos
   const [formData, setFormData] = useState<Candidato>({
+    id: "",
     nome: "",
     numero: "",
     partido: "",
@@ -31,6 +32,7 @@ export default function Admin() {
     e.preventDefault();
     postCandidato(formData);
     setFormData({
+      id: "",
       nome: "",
       numero: "",
       partido: "",
@@ -59,7 +61,7 @@ export default function Admin() {
                 <th className="w-1/12">Id</th>
                 <th className="w-1/6">Nome</th>
                 <th className="w-1/6">Número</th>
-                <th className="w-1/6">Partido</th>
+                <th className="w-1/4">Partido</th>
                 <th className="w-1/4">Propostas</th>
                 <th className="w-1/6">Ações</th>
               </tr>
@@ -116,7 +118,7 @@ export default function Admin() {
                 />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="numero" className="font-semibold">Número</label>
+                <label htmlFor="partido" className="font-semibold">Partido</label>
                 <input
                   id="partido"
                   name="partido"

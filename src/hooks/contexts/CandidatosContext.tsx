@@ -5,7 +5,7 @@ type CandidatosContextType = {
     candidatos: Candidato[],
     postCandidato: (newCandidato: Candidato) => Promise<void>;
     putCandidato: (candidato: Candidato) => Promise<void>;
-    deleteCandidato: (id: number) => Promise<void>
+    deleteCandidato: (id: string) => Promise<void>
 }
 
 type CandidatosContextProps = {
@@ -61,7 +61,7 @@ export const CandidatosContextProvider = ({ children }: CandidatosContextProps) 
     };
 
     // DELETE
-    const deleteCandidato = async (id : number) => {
+    const deleteCandidato = async (id : string) => {
         try {
             await axios.delete(`http://localhost:3000/candidatos/${id}`);
             fetchCandidatos(); // Atualiza a lista após a exclusão

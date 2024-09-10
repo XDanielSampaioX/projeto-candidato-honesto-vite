@@ -18,6 +18,7 @@ export default function Home() {
             ).map((candidato) => (
               <Card
                 key={candidato.id}
+                id={candidato.id}
                 nome={candidato.nome}
                 numero={candidato.numero}
                 partido={candidato.partido}
@@ -27,6 +28,7 @@ export default function Home() {
             )) : candidatos.map((candidato) => (
               <Card
                 key={candidato.id}
+                id={candidato.id}
                 nome={candidato.nome}
                 numero={candidato.numero}
                 partido={candidato.partido}
