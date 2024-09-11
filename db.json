@@ -2,38 +2,59 @@
   "candidatos": [
     {
       "id": "2",
-      "nome": "Carlos Pereira sampaio",
+      "nome": "Carlos Pereira Sampaio",
       "numero": 5678,
-      "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
-      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
+      "biografia": "Carlos Pereira é um militante dedicado à construção de uma sociedade sem classes e à redistribuição equitativa da riqueza.",
+      "propostas": "Eliminação da propriedade privada dos meios de produção; Nacionalização dos recursos naturais e das indústrias-chave; Implementação de um sistema de planejamento econômico centralizado para garantir a igualdade social."
     },
     {
       "id": "3",
-      "nome": "Carlos Pereira sam",
+      "nome": "Carlos Pereira Sam",
       "numero": 5678,
-      "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
-      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
+      "biografia": "Carlos Pereira é um militante dedicado à construção de uma sociedade sem classes e à redistribuição equitativa da riqueza.",
+      "propostas": "Eliminação da propriedade privada dos meios de produção; Nacionalização dos recursos naturais e das indústrias-chave; Implementação de um sistema de planejamento econômico centralizado para garantir a igualdade social."
     },
     {
       "id": "4",
-      "nome": "João Costa",
-      "numero": 1122,
-      "biografia": "João Costa é um advogado especializado em direitos humanos e luta por justiça social.",
-      "propostas": "Defender os direitos das minorias; Promover a igualdade de oportunidades no mercado de trabalho; Reformar o sistema judiciário para torná-lo mais acessível."
+      "nome": "Ana Silva",
+      "numero": 1234,
+      "biografia": "Ana Silva é uma ativista comprometida com a criação de uma sociedade igualitária e a eliminação das disparidades sociais através de políticas progressistas.",
+      "propostas": "Reforma radical do sistema educacional para garantir educação gratuita e universal; Implementação de programas de redistribuição de riqueza para promover inclusão social; Fortalecimento dos serviços públicos para apoiar todas as famílias igualmente."
     },
     {
       "id": "5",
-      "nome": "Luciana Oliveira",
-      "numero": 3344,
-      "biografia": "Luciana Oliveira é uma engenheira ambiental comprometida com a sustentabilidade e proteção do meio ambiente.",
-      "propostas": "Criar políticas de incentivo à energia renovável; Implementar programas de reciclagem em áreas urbanas; Promover a preservação das florestas e recursos hídricos."
+      "nome": "Pedro Oliveira",
+      "numero": 2345,
+      "biografia": "Pedro Oliveira é um advogado revolucionário que luta pela construção de uma sociedade justa e igualitária, eliminando as desigualdades estruturais.",
+      "propostas": "Abolição do sistema de justiça atual e substituição por um sistema baseado na justiça social e na igualdade; Implementação de uma governança transparente e democrática que reflete os princípios de equidade; Defesa dos direitos humanos com foco na eliminação da exploração capitalista."
     },
     {
       "id": "6",
-      "nome": "Rafael Lima",
-      "numero": 5566,
-      "biografia": "Rafael Lima é um economista com ampla experiência em gestão pública e desenvolvimento econômico.",
-      "propostas": "Aumentar o investimento em infraestrutura; Criar políticas para redução do desemprego; Promover a inclusão social através de programas de renda mínima."
+      "nome": "Maria Costa",
+      "numero": 3456,
+      "biografia": "Maria Costa é uma engenheira dedicada a transformar o desenvolvimento urbano para refletir os princípios de igualdade e justiça social.",
+      "propostas": "Transformação das cidades para que sejam comunidades sustentáveis e coletivas; Nacionalização dos recursos energéticos e desenvolvimento de infraestrutura voltada para o bem comum; Criação de projetos urbanos que reflitam a igualdade e a justiça social."
+    },
+    {
+      "id": "7",
+      "nome": "João Santos",
+      "numero": 4567,
+      "biografia": "João Santos é um economista comprometido com a criação de uma economia baseada no bem-estar coletivo sobre os interesses individuais.",
+      "propostas": "Transformação da economia para um sistema baseado no controle coletivo dos meios de produção; Implementação de políticas econômicas que eliminem a desigualdade e promovam a justiça social; Apoio total à criação de cooperativas e empresas comunitárias."
+    },
+    {
+      "id": "8",
+      "nome": "Fernanda Lima",
+      "numero": 5679,
+      "biografia": "Fernanda Lima é uma jornalista dedicada à liberdade de expressão e à construção de uma sociedade justa e transparente.",
+      "propostas": "Garantia de liberdade de imprensa com foco na eliminação da censura e do controle corporativo; Promoção da transparência total na governança e combate à corrupção sistêmica; Defesa dos direitos civis e igualdade social como pilares da nova ordem."
+    },
+    {
+      "id": "9",
+      "nome": "Ricardo Almeida",
+      "numero": 6789,
+      "biografia": "Ricardo Almeida é um cientista político que defende a reforma radical do sistema político para garantir uma participação cidadã verdadeira e uma democracia equitativa.",
+      "propostas": "Reforma profunda do sistema político para instaurar uma democracia baseada na participação popular direta; Incentivo à participação cidadã na construção de políticas progressistas; Fortalecimento das estruturas democráticas para garantir uma sociedade igualitária."
     }
   ]
 }
