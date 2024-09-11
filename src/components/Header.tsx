@@ -12,7 +12,7 @@ export default function Menu() {
     };
 
     return (
-        <div className="flex justify-around items-center w-full m-auto -mx-5 bg-blue-900 gap-10 p-4 top-0 fixed z-50">
+        <header className="flex justify-around items-center w-full m-auto -mx-5 bg-blue-900 gap-10 p-4 top-0 fixed z-50">
             <div className="flex items-center gap-14">
                 <div className="w-12"> <img src="./LOGO.png" alt="logo" /></div>
                 <nav className="text-white font-semibold">
@@ -33,6 +33,6 @@ export default function Menu() {
                     value={termoDeBusca} onChange={quandoMudar} />
                 <Search className="absolute top-3.5 right-5 textAzul" />
             </div>
-        </div>
+        </header>
     )
 };

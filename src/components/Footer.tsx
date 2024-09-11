@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div className="w-full text-center items-center justify-around flex-col py-8 bg-blue-900 text-white font-semibold fixed bottom-0">
-      <footer className="flex justify-around max-md:flex-col">
+    <footer className="w-full text-center items-center justify-around flex-col py-8 bg-blue-900 text-white font-semibold fixed bottom-0">
+      <div className="flex justify-around max-md:flex-col">
           <div>
             <p>© 2024 - Todos os direitos reservados.</p>
           </div>
@@ -12,8 +12,8 @@ const Footer = () => {
               <li> <button>Política de Privacidade</button> </li>
             </ul>
           </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   );
 };
 
