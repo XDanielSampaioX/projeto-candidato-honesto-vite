@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import Modal from "../Modal";
 import PorqueVotar from "../PorqueVotar";
+import LikeAndDisLike from "../LikeAndDisLike";
 
 export default function Card(props: Candidato) {
     const [modalAberto, setModalAberto] = useState(false);
@@ -37,11 +38,7 @@ export default function Card(props: Candidato) {
                     <p>{props.propostas}</p>
                 </div>
                 <PorqueVotar>
-                    <button
-                        onClick={fecharModal}
-                        className="mt-4 bg-red-500 text-white px-14 py-2 rounded-md hover:bg-red-600">
-                        Fechar
-                    </button>
+                    <LikeAndDisLike id={props.id} nome={props.nome} numero={props.numero} biografia={props.biografia}></LikeAndDisLike>
                 </PorqueVotar>
             </Modal>
         </div>

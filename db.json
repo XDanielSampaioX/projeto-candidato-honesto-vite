@@ -6,7 +6,9 @@
       "numero": 1234,
       "partido": "Partido dos Trabalhadores",
       "biografia": "Graduado em Administração. Atualmente é assistente administrativo no Programa de Pós-Graduação em Direito Constitucional Mestrado e Doutorado da Universidade de Fortaleza-UNIFOR.",
-      "propostas": "Investir em educação básica de qualidade; Expandir o acesso a programas de alfabetização para adultos; Promover a formação contínua dos professores."
+      "propostas": "Investir em educação básica de qualidade; Expandir o acesso a programas de alfabetização para adultos; Promover a formação contínua dos professores.",
+      "like": 61,
+      "disLike": 31
     },
     {
       "id": "2",
@@ -14,7 +16,9 @@
       "numero": 5678,
       "partido": "Partido Verde",
       "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
-      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
+      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais.",
+      "like": 52,
+      "disLike": null
     },
     {
       "id": "3",
@@ -22,7 +26,9 @@
       "numero": 5678,
       "partido": "Partido Democrata",
       "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
-      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais."
+      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais.",
+      "like": 28,
+      "disLike": 22
     },
     {
       "id": "4",
@@ -30,7 +36,9 @@
       "numero": 1122,
       "partido": "Partido dos Trabalhadores",
       "biografia": "João Costa é um advogado especializado em direitos humanos e luta por justiça social.",
-      "propostas": "Defender os direitos das minorias; Promover a igualdade de oportunidades no mercado de trabalho; Reformar o sistema judiciário para torná-lo mais acessível."
+      "propostas": "Defender os direitos das minorias; Promover a igualdade de oportunidades no mercado de trabalho; Reformar o sistema judiciário para torná-lo mais acessível.",
+      "like": 21,
+      "disLike": 38
     },
     {
       "id": "5",
@@ -38,7 +46,9 @@
       "numero": "13",
       "partido": "Dos ladrao",
       "biografia": "FAZ O L",
-      "propostas": "Colocar mais imposto e roubar todo mundo"
+      "propostas": "Colocar mais imposto e roubar todo mundo",
+      "like": 5,
+      "disLike": 30
     },
     {
       "id": "6",
@@ -46,7 +56,9 @@
       "numero": "3456",
       "partido": "Partido Social Trabalhista",
       "biografia": "Filósofa e estudante de gestão política",
-      "propostas": "Melhorias nas vias públicas, saneamento básico de baixos de classe baixa."
+      "propostas": "Melhorias nas vias públicas, saneamento básico de baixos de classe baixa.",
+      "like": 29,
+      "disLike": 17
     }
   ]
 }

@@ -5,13 +5,16 @@ import InputContextProvider from './hooks/contexts/InputContext';
 import App from './App';
 import './index.css';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { LikeAndDisLikeContextProvider } from './hooks/contexts/LikeAndDisLikeContext';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Router>
       <InputContextProvider>
         <CandidatosContextProvider>
-          <App />
+          <LikeAndDisLikeContextProvider>
+            <App />
+          </LikeAndDisLikeContextProvider>
         </CandidatosContextProvider>
       </InputContextProvider>
     </Router>
