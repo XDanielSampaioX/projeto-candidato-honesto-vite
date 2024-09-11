@@ -12,7 +12,7 @@ export default function Card(props: Candidato) {
     return (
         <div className="relative text-center bg-white rounded-md w-72 h-auto">
             <button onClick={abrirModal} className="w-full h-full">
-                <div className="flex max-lg:flex-col items-center justify-evenly gap-10 p-4">
+                <div className="flex max-lg:flex-col items-center justify-evenly gap-10 p-4 h-96">
                     <div className="p-7 bg-gray-500 rounded-full absolute top-4 ">
                         <FaUser className="w-10 h-10 " />
                     </div>

@@ -32,7 +32,6 @@ export default function Admin() {
     e.preventDefault();
     postCandidato(formData);
     setFormData({
-      id: "",
       nome: "",
       numero: "",
       partido: "",
@@ -49,7 +48,7 @@ export default function Admin() {
 
   return (
     <>
-      <header className="flex flex-col items-center max-w-screen">
+      <header className="flex flex-col items-center max-w-screen py-16">
         <div className="flex flex-col items-center space-y-6 py-3">
           <div className="flex items-center justify-around gap-48">
             <h1 className="text-3xl text-white font-bold max-md:hidden">Administração de Candidatos</h1>

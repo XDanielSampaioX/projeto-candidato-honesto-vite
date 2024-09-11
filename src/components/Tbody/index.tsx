@@ -17,7 +17,6 @@ export default function Tbody(props: Candidato) {
 
   // Estados para armazenar os valores dos campos
   const [formData, setFormData] = useState<Candidato>({
-    id: props.id || "",
     nome: props.nome || "",
     numero: props.numero || "",
     partido: props.partido || "",

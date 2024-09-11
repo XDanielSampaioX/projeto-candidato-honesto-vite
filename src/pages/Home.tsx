@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="flex flex-col justify-center items-center max-w-screen mx-auto">
+      <header className="flex flex-col justify-center items-center max-w-screen mx-auto py-24">
         <div className="grid max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 grid-cols-4 gap-5 p-5">
           {termoDeBusca.length > 0
             ? candidatos.filter(candidato =>
