@@ -60,7 +60,7 @@ export default function Admin() {
               <tr className="flex text-center justify-between bg-gray-700 p-3 rounded-t-lg w-full">
                 <th className="w-1/12">Id</th>
                 <th className="w-1/6">Nome</th>
-                <th className="w-1/6">Número</th>
+                <th className="w-1/12">Número</th>
                 <th className="w-1/4">Partido</th>
                 <th className="w-1/4">Propostas</th>
                 <th className="w-1/6">Ações</th>
