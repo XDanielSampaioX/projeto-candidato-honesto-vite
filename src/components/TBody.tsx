@@ -1,7 +1,7 @@
-import { FaTrash, FaPen } from "react-icons/fa";
-import Modal from "../Modal";
 import { useContext, useState } from "react";
-import CandidatosContext from "../../hooks/contexts/CandidatosContext";
+import { FaPen, FaTrash } from "react-icons/fa";
+import CandidatosContext from "../hooks/contexts/CandidatosContext";
+import Modal from "./Modal";
 
 export default function Tbody(props: Candidato) {
   const { putCandidato, deleteCandidato } = useContext(CandidatosContext);

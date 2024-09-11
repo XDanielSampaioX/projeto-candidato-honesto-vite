@@ -3,9 +3,9 @@ import { InputContext } from "../hooks/contexts/InputContext";
 
 import CandidatosContext from "../hooks/contexts/CandidatosContext";
 
-import Tbody from "../components/Tbody";
-import Modal from "../components/Modal";
 import Adicionar from "../assets/Adicionar";
+import Modal from "../components/Modal";
+import Tbody from "../components/TBody";
 
 export default function Admin() {
 

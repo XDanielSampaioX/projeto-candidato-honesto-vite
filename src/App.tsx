@@ -1,8 +1,8 @@
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer';
 import Menu from './components/Menu';
 import Admin from './pages/Admin';
 import Home from './pages/Home';
-import Footer from './components/Footer';
 
 export default function App() {
   return (

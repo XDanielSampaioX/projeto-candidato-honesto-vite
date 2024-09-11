@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { Search } from "../../assets/Search";
-import { InputContext } from "../../hooks/contexts/InputContext";
 import { Link } from "react-router-dom";
+import { Search } from "../assets/Search";
+import { InputContext } from "../hooks/contexts/InputContext";
 
 export default function Menu() {
 
