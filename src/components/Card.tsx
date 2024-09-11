@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaUser } from "react-icons/fa";
-import Modal from "../Modal/Modal";
-import PorqueVotar from "../PorqueVotar/PorqueVotar";
+import Modal from "./Modal";
+import PorqueVotar from "./PorqueVotar";
 import LikeAndDisLike from "./LikeAndDisLike";
 
 export default function Card(props: Candidato) {
