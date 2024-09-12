@@ -8,7 +8,7 @@ type InputPostProps = {
 export default function InputPost(props: InputPostProps) {
     return (
         <>
-            <label htmlFor="nome" className="font-semibold">{props.name}</label>
+            <label htmlFor={props.id} className="font-semibold">{props.name}</label>
             <input
                 id= {props.id}
                 name= {props.name}
