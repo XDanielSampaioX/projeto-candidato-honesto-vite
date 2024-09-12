@@ -49,10 +49,10 @@ export default function Admin() {
   return (
     <>
       <main className="flex flex-col items-center max-w-screen py-16">
-        <div className="flex flex-col items-center space-y-6 py-3">
-          <div className="flex items-center justify-around gap-48">
-            <h1 className="text-3xl text-white font-bold max-md:hidden">Administração de Candidatos</h1>
-            <button onClick={abrirModal} className="flex gap-2 bg-blue-600 text-white font-semibold rounded-lg p-2 my-2"><Adicionar/>Adicionar</button>
+        <div className="flex flex-col items-center space-y-6 py-3 relative">
+          <div className="flex items-center justify-around ">
+            <h1 className="text-3xl text-white font-bold max-md:hidden mt-8">Administração de Candidatos</h1>
+            <button onClick={abrirModal} className={`flex gap-2 bg-blue-600 text-white font-semibold rounded-lg p-2 max-md:static max-md:mt-8 absolute top-10 right-0`}><Adicionar/>Adicionar</button>
           </div>
           <table className="bg-gray-800 text-white rounded-lg shadow-lg w-full mx-auto">
             <thead className="flex justify-center">
@@ -61,7 +61,7 @@ export default function Admin() {
                 <th className="w-1/6">Nome</th>
                 <th className="w-1/12">Número</th>
                 <th className="w-1/4">Partido</th>
-                <th className="w-1/4">Propostas</th>
+                <th className="w-1/4 max-md:hidden">Propostas</th>
                 <th className="w-1/6">Ações</th>
               </tr>
             </thead>

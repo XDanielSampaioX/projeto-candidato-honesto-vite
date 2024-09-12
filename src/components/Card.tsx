@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import Modal from "./Modal";
-import PorqueVotar from "./PorqueVotar";
 import LikeAndDisLike from "./LikeAndDisLike";
 
 export default function Card(props: Candidato) {
@@ -37,9 +36,7 @@ export default function Card(props: Candidato) {
                     <p>{props.biografia}</p>
                     <p>{props.propostas}</p>
                 </div>
-                <PorqueVotar>
                     <LikeAndDisLike id={props.id} nome={props.nome} numero={props.numero} biografia={props.biografia}></LikeAndDisLike>
-                </PorqueVotar>
             </Modal>
         </div>
     );

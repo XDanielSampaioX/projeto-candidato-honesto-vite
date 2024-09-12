@@ -41,7 +41,7 @@ export default function Tbody(props: Candidato) {
           <td className="w-1/6 font-semibold">{props.nome}</td>
           <td className="w-1/12 ">{props.numero}</td>
           <td className="w-1/4 ">{props.partido}</td>
-          <td className="w-1/4">{props.propostas}</td>
+          <td className="w-1/4 max-md:hidden">{props.propostas}</td>
           <td className="w-1/6 flex justify-center h-9 gap-1">
             <button onClick={abrirModal} className="bg-teal-800 p-2 rounded-lg">
               <FaPen />
