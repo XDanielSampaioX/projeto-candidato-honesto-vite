@@ -59,6 +59,70 @@
       "propostas": "Melhorias nas vias públicas, saneamento básico de baixos de classe baixa.",
       "like": 29,
       "disLike": 17
+    },
+    {
+      "id": "",
+      "nome": "daniel",
+      "numero": "1234",
+      "partido": "Sem partido",
+      "biografia": "Cara",
+      "propostas": "KKKKKK"
+    },
+    {
+      "id": "96f6",
+      "nome": "klnkn",
+      "numero": "78977",
+      "partido": "knhcvbn",
+      "biografia": "kjbhvcvbl",
+      "propostas": "çlkjhucydfg"
+    },
+    {
+      "id": "1de6",
+      "nome": "lknjkb",
+      "numero": "",
+      "partido": "",
+      "biografia": "",
+      "propostas": ""
+    },
+    {
+      "id": "b71e",
+      "nome": "gg",
+      "numero": "",
+      "partido": "",
+      "biografia": "",
+      "propostas": ""
+    },
+    {
+      "id": "89c3",
+      "nome": "fonseca da Silva",
+      "numero": "1234",
+      "partido": "Sem partido",
+      "biografia": "",
+      "propostas": ""
+    },
+    {
+      "id": "cc2c",
+      "nome": "daniel",
+      "numero": "252525",
+      "partido": "Sem partido",
+      "biografia": "lknbjk",
+      "propostas": "kljhvcfyguil"
+    },
+    {
+      "id": "",
+      "nome": "Daniel Sampaio",
+      "numero": "157157",
+      "partido": "Patido raivoso",
+      "biografia": "Desenvolvedor Full Stack Developer",
+      "propostas": "Se tornar o cara mais foda em programação"
+    },
+    {
+      "id": "9c54",
+      "nome": "Marcio Fonseca da Silva",
+      "numero": "",
+      "partido": "",
+      "biografia": "",
+      "propostas": ""
     }
   ]
 }

@@ -6,6 +6,7 @@ import CandidatosContext from "../hooks/contexts/CandidatosContext";
 import Adicionar from "../assets/Adicionar";
 import Modal from "../components/Modal";
 import Tbody from "../components/TBody";
+import InputPost from "../components/InputPost";
 
 export default function Admin() {
 
@@ -52,7 +53,7 @@ export default function Admin() {
         <div className="flex flex-col items-center space-y-6 py-3 relative">
           <div className="flex items-center justify-around ">
             <h1 className="text-3xl text-white font-bold max-md:hidden mt-8">Administração de Candidatos</h1>
-            <button onClick={abrirModal} className={`flex gap-2 bg-blue-600 text-white font-semibold rounded-lg p-2 max-md:static max-md:mt-8 absolute top-10 right-0`}><Adicionar/>Adicionar</button>
+            <button onClick={abrirModal} className="flex gap-2 bg-blue-600 text-white font-semibold rounded-lg p-2 max-md:static max-md:mt-8 absolute top-10 right-0"><Adicionar/>Adicionar</button>
           </div>
           <table className="bg-gray-800 text-white rounded-lg shadow-lg w-full mx-auto">
             <thead className="flex justify-center">
@@ -97,54 +98,19 @@ export default function Admin() {
             <h2 className="text-xl font-semibold mb-4">Formulário de Cadastro</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="flex flex-col">
-                <label htmlFor="nome" className="font-semibold">Nome</label>
-                <input
-                  id="nome"
-                  name="nome"
-                  value={formData.nome}
-                  onChange={handleChange}
-                  className="p-2 border border-gray-300 rounded"
-                />
+                <InputPost id="nome" name="nome" value={formData.nome} onChange={handleChange}></InputPost>
               </div>
               <div className="flex flex-col">
-                <label htmlFor="numero" className="font-semibold">Número</label>
-                <input
-                  id="numero"
-                  name="numero"
-                  value={formData.numero}
-                  onChange={handleChange}
-                  className="p-2 border border-gray-300 rounded"
-                />
+                <InputPost id="numero" name="numero" value={formData.numero} onChange={handleChange}></InputPost>
               </div>
               <div className="flex flex-col">
-                <label htmlFor="partido" className="font-semibold">Partido</label>
-                <input
-                  id="partido"
-                  name="partido"
-                  value={formData.partido}
-                  onChange={handleChange}
-                  className="p-2 border border-gray-300 rounded"
-                />
+                <InputPost id="partido" name="partido" value={formData.partido} onChange={handleChange}></InputPost>
               </div>
               <div className="flex flex-col">
-                <label htmlFor="biografia" className="font-semibold">Biografia</label>
-                <textarea
-                  id="biografia"
-                  name="biografia"
-                  value={formData.biografia}
-                  onChange={handleChange}
-                  className="p-2 border border-gray-300 rounded"
-                />
+                <InputPost id="biografia" name="biografia" value={formData.biografia} onChange={handleChange}></InputPost>
               </div>
               <div className="flex flex-col">
-                <label htmlFor="propostas" className="font-semibold">Propostas</label>
-                <textarea
-                  id="propostas"
-                  name="propostas"
-                  value={formData.propostas}
-                  onChange={handleChange}
-                  className="p-2 border border-gray-300 rounded"
-                />
+                <InputPost id="propostas" name="propostas" value={formData.propostas} onChange={handleChange}></InputPost>
               </div>
               <button
                 type="submit"
