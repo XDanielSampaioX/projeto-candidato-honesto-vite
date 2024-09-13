@@ -5,10 +5,10 @@ type InputPostProps = {
     onChange : (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void,
 }
 
-export default function InputPost(props: InputPostProps) {
+export default function Input(props: InputPostProps) {
     return (
         <>
-            <label htmlFor={props.id} className="font-semibold">{props.name}</label>
+            <label htmlFor={props.id} className="block text-sm font-medium text-white">{props.name}</label>
             <input
                 id= {props.id}
                 name= {props.name}

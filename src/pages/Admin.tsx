@@ -4,9 +4,9 @@ import { InputContext } from "../hooks/contexts/InputContext";
 import CandidatosContext from "../hooks/contexts/CandidatosContext";
 
 import Adicionar from "../assets/Adicionar";
+import InputPost from "../components/Input";
 import Modal from "../components/Modal";
 import Tbody from "../components/TBody";
-import InputPost from "../components/InputPost";
 
 export default function Admin() {
 
@@ -16,7 +16,6 @@ export default function Admin() {
 
   // Estados para armazenar os valores dos campos
   const [formData, setFormData] = useState<Candidato>({
-    id: "",
     nome: "",
     numero: "",
     partido: "",
@@ -70,9 +69,10 @@ export default function Admin() {
               ? candidatos.filter(candidato =>
                 candidato.nome.toLowerCase().includes(termoDeBusca.toLowerCase()) ||
                 candidato.numero.toString().includes(termoDeBusca)
-              ).map((candidato) => (
+              ).map((candidato, index) => (
+                <div>
                 <Tbody
-                  key={candidato.id}
+                  key={index}
                   id={candidato.id}
                   nome={candidato.nome}
                   numero={candidato.numero}
@@ -80,10 +80,12 @@ export default function Admin() {
                   biografia={candidato.biografia}
                   propostas={candidato.propostas}
                 />
-              )) : candidatos.map((candidato) => (
+              </div>
+              
+              )) : candidatos.map((candidato, index) => (
                 <Tbody
-                  id={candidato.id}
-                  key={candidato.id}
+                key={index}
+                id={candidato.id}
                   nome={candidato.nome}
                   numero={candidato.numero}
                   partido={candidato.partido}

@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { FaPen, FaTrash } from "react-icons/fa";
 import CandidatosContext from "../hooks/contexts/CandidatosContext";
 import Modal from "./Modal";
+import Input from "./Input";
 
 export default function Tbody(props: Candidato) {
   const { putCandidato, deleteCandidato } = useContext(CandidatosContext);
@@ -17,6 +18,7 @@ export default function Tbody(props: Candidato) {
 
   // Estados para armazenar os valores dos campos
   const [formData, setFormData] = useState<Candidato>({
+    id: props.id || "",
     nome: props.nome || "",
     numero: props.numero || "",
     partido: props.partido || "",
@@ -54,75 +56,33 @@ export default function Tbody(props: Candidato) {
       </tbody>
 
       <Modal abrirModal={modalAberto} fecharModal={fecharModal}>
-        <div className="flex flex-col justify-center bg-blue-900 text-black items-center gap-4 p-3 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-semibold mb-3">Formulário de Cadastro</h2>
-
-          <form onSubmit={handleSubmit} className="w-full max-w-md">
-            <div className="mb-2">
-              <label htmlFor="nome" className="block text-sm font-medium mb-1">Nome</label>
-              <input
-                id="nome"
-                name="nome"
-                value={formData.nome}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
+        <div className="bg-blue-900 text-black p-4 rounded-lg">
+          <h2 className="text-xl font-semibold mb-4">Formulário de Cadastro</h2>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="flex flex-col">
+              <Input id="nome" name="nome" value={formData.nome} onChange={handleChange}></Input>
             </div>
-
-            <div className="mb-2">
-              <label htmlFor="numero" className="block text-sm font-medium mb-1 ">Número</label>
-              <input
-                id="numero"
-                name="numero"
-                value={formData.numero}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
+            <div className="flex flex-col">
+              <Input id="numero" name="numero" value={formData.numero} onChange={handleChange}></Input>
             </div>
-
-            <div className="mb-2">
-              <label htmlFor="partido" className="block text-sm font-medium mb-1 text-white">Partido</label>
-              <input
-                id="partido"
-                name="partido"
-                value={formData.partido}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
+            <div className="flex flex-col">
+              <Input id="partido" name="partido" value={formData.partido} onChange={handleChange}></Input>
             </div>
-
-            <div className="mb-2">
-              <label htmlFor="biografia" className="block text-sm font-medium mb-1 text-white">Biografia</label>
-              <textarea
-                id="biografia"
-                name="biografia"
-                value={formData.biografia}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
+            <div className="flex flex-col">
+              <Input id="biografia" name="biografia" value={formData.biografia} onChange={handleChange}></Input>
             </div>
-
-            <div className="mb-4">
-              <label htmlFor="propostas" className="block text-sm font-medium mb-1 text-white">Propostas</label>
-              <textarea
-                id="propostas"
-                name="propostas"
-                value={formData.propostas}
-                onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
+            <div className="flex flex-col">
+              <Input id="propostas" name="propostas" value={formData.propostas} onChange={handleChange}></Input>
             </div>
-
             <button
               type="submit"
-              className="w-full bg-teal-600 text-white py-2 px-4 rounded-lg hover:bg-teal-700 transition duration-300"
+              className="bg-green-600 text-white font-semibold rounded-lg p-2 hover:bg-green-700 transition"
             >
               Salvar
             </button>
           </form>
         </div>
       </Modal>
-
     </>
   );
 }
