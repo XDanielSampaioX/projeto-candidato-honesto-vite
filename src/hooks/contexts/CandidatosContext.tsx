@@ -61,20 +61,23 @@ export const CandidatosContextProvider = ({ children }: CandidatosContextProps) 
     };
 
     // DELETE
-    const deleteCandidato = async (id : string | undefined) => {
-        try {
-            await axios.delete(`http://localhost:3000/candidatos/${id}`);
-            fetchCandidatos(); // Atualiza a lista após a exclusão
-        } catch (error) {
-            console.log("Erro ao deletar candidato:", error);
+    const deleteCandidato = async (id: string | undefined) => {
+        const confirmDelete = window.confirm("Tem certeza que deseja ELIMINAR o candidato?");
+        if (confirmDelete) {
+            try {
+                await axios.delete(`http://localhost:3000/candidatos/${id}`);
+                fetchCandidatos();
+            } catch (error) {
+                console.log("Erro ao deletar candidato:", error);
+            }
         }
-    };
+        };
 
-    return (
-        <CandidatosContext.Provider value={{ candidatos, postCandidato, putCandidato, deleteCandidato }}>
-            {children}
-        </CandidatosContext.Provider>
-    );
-}
+        return (
+            <CandidatosContext.Provider value={{ candidatos, postCandidato, putCandidato, deleteCandidato }}>
+                {children}
+            </CandidatosContext.Provider>
+        );
+    }
 
-export default CandidatosContext;
+    export default CandidatosContext;
