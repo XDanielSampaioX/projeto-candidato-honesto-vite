@@ -35,6 +35,7 @@ export default function Tbody(props: Candidato) {
   const abrirModal = () => setModalAberto(true);
   const fecharModal = () => setModalAberto(false);
 
+  
   return (
     <>
       <tbody className="flex flex-col space-y-4">
