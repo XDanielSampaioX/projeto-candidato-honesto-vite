@@ -6,7 +6,7 @@ import CandidatosContext from "../hooks/contexts/CandidatosContext";
 import Adicionar from "../assets/Adicionar";
 import InputPost from "../components/Input";
 import Modal from "../components/Modal";
-import Tbody from "../components/TBody";
+import Lista from "../components/Lista";
 
 export default function Admin() {
 
@@ -54,24 +54,23 @@ export default function Admin() {
             <h1 className="text-3xl text-white font-bold max-md:hidden mt-8">Administração de Candidatos</h1>
             <button onClick={abrirModal} className="flex gap-2 bg-blue-600 text-white font-semibold rounded-lg p-2 max-md:static max-md:mt-8 absolute top-10 right-0"><Adicionar/>Adicionar</button>
           </div>
-          <table className="bg-gray-800 text-white rounded-lg shadow-lg w-full mx-auto">
-            <thead className="flex justify-center">
-              <tr className="flex text-center justify-between bg-gray-700 p-3 rounded-t-lg w-full">
-                <th className="w-1/12">Id</th>
-                <th className="w-1/6">Nome</th>
-                <th className="w-1/12">Número</th>
-                <th className="w-1/4">Partido</th>
-                <th className="w-1/4 max-md:hidden">Propostas</th>
-                <th className="w-1/6">Ações</th>
-              </tr>
-            </thead>
+          <div className="bg-gray-800 text-white rounded-lg shadow-lg w-full mx-auto">
+            <ul className="flex justify-center">
+              <li className="flex text-center justify-between bg-gray-700 p-3 rounded-t-lg w-full">
+                <span className="w-1/12">Id</span>
+                <span className="w-1/6">Nome</span>
+                <span className="w-1/12">Número</span>
+                <span className="w-1/4">Partido</span>
+                <span className="w-1/4 max-md:hidden">Propostas</span>
+                <span className="w-1/6">Ações</span>
+              </li>
+            </ul>
             {termoDeBusca.length > 0
               ? candidatos.filter(candidato =>
                 candidato.nome.toLowerCase().includes(termoDeBusca.toLowerCase()) ||
                 candidato.numero.toString().includes(termoDeBusca)
               ).map((candidato, index) => (
-                <div>
-                <Tbody
+                <Lista
                   key={index}
                   id={candidato.id}
                   nome={candidato.nome}
@@ -80,10 +79,8 @@ export default function Admin() {
                   biografia={candidato.biografia}
                   propostas={candidato.propostas}
                 />
-              </div>
-              
               )) : candidatos.map((candidato, index) => (
-                <Tbody
+                <Lista
                 key={index}
                 id={candidato.id}
                   nome={candidato.nome}
@@ -93,7 +90,7 @@ export default function Admin() {
                   propostas={candidato.propostas}
                 />))}
                 
-          </table>
+          </div>
         </div>
         <Modal abrirModal={modalAberto} fecharModal={fecharModal}>
           <div className="bg-blue-900 text-black p-4 rounded-lg">

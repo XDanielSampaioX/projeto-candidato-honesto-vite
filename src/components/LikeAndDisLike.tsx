@@ -7,7 +7,7 @@ export default function LikeAndDisLike(candidato: Candidato) {
     const { like, disLike, patchLike, patchDisLike } = useContext(LikeAndDisLikeContext);
 
     return (
-            <div className="flex gap-2 w-full">
+            <div className="flex gap-2">
                 <button className="w-full" onClick={() => patchLike(candidato)}>
                     <div className="flex p-2 justify-center gap-2 bg-blue-800 text-white rounded-md">
                         <Like />
