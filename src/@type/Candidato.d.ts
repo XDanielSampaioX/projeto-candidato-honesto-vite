@@ -1,5 +1,6 @@
 declare type Candidato = {
     id?: string;
+    imagem?: string;
     nome: string;
     partido?: string;
     numero: string,

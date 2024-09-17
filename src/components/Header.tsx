@@ -28,10 +28,10 @@ export default function Menu() {
             </div>
             <div className="text-white font-semibold relative">
                 <label className="max-md:hidden" htmlFor="inputCandidato">Buscar Candidato:</label>
-                <input className="rounded-sm m-3 px-2 text-black max-lg:w-36" type="text"
-                    id="inputCandidato" placeholder="Procurar registro..."
+                <input className="rounded-md m-3 p-1 text-black max-lg:w-36 relative" type="text"
+                    id="inputCandidato"
                     value={termoDeBusca} onChange={quandoMudar} />
-                <Search className="absolute top-3.5 right-5 textAzul" />
+                <Search className="absolute top-4 right-5 text-gray-500" />
             </div>
         </header>
     )

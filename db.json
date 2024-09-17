@@ -2,7 +2,7 @@
   "candidatos": [
     {
       "id": "1",
-      "nome": "Marcio Fonseca da Silva",
+      "nome": "José Carlos Moraes",
       "numero": "1234",
       "partido": "Partido dos Trabalhadores",
       "biografia": "Graduado em Administração. Atualmente é assistente administrativo no Programa de Pós-Graduação em Direito Constitucional Mestrado e Doutorado da Universidade de Fortaleza-UNIFOR.",
@@ -10,61 +10,75 @@
     },
     {
       "id": "2",
-      "nome": "Carlos Pereira Sampaio",
-      "numero": 5678,
-      "partido": "Partido Verde",
-      "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
-      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais.",
-      "like": 53,
-      "disLike": 6
+      "nome": "Ana Paula Ribeiro",
+      "numero": "5678",
+      "partido": "Partido da Social Brasileira",
+      "biografia": "Formada em Engenharia Civil com MBA em Gestão de Projetos. Trabalha na área de infraestrutura urbana com foco em sustentabilidade e inovação.",
+      "propostas": "Melhorar a infraestrutura urbana com projetos sustentáveis; Incentivar a construção de moradias populares; Desenvolver áreas verdes nas cidades."
     },
     {
       "id": "3",
-      "nome": "Carlos Pereira sam",
-      "numero": 5678,
-      "partido": "Partido Democrata",
-      "biografia": "Carlos Pereira é um empresário bem-sucedido que busca modernizar a gestão pública.",
-      "propostas": "Reduzir a burocracia para pequenas empresas; Incentivar a inovação e o empreendedorismo; Modernizar a administração pública com tecnologias digitais.",
-      "like": 31,
-      "disLike": 28
+      "nome": "Roberto Silva de Souza",
+      "numero": "9101",
+      "partido": "Partido Verde",
+      "biografia": "Ambientalista com graduação em Ciências Ambientais e experiência em projetos de preservação ambiental e energia renovável.",
+      "propostas": "Promover o uso de energias renováveis; Preservar áreas de proteção ambiental; Incentivar a educação ambiental nas escolas."
     },
     {
       "id": "4",
-      "nome": "João Costa",
-      "numero": 1122,
-      "partido": "Partido dos Trabalhadores",
-      "biografia": "João Costa é um advogado especializado em direitos humanos e luta por justiça social.",
-      "propostas": "Defender os direitos das minorias; Promover a igualdade de oportunidades no mercado de trabalho; Reformar o sistema judiciário para torná-lo mais acessível.",
-      "like": 21,
-      "disLike": 41
+      "nome": "Fernanda Oliveira",
+      "numero": "1121",
+      "partido": "Partido Liberal",
+      "biografia": "Economista com experiência em políticas públicas e desenvolvimento econômico. Trabalhou em diversas agências de desenvolvimento internacional.",
+      "propostas": "Fomentar o empreendedorismo local; Reduzir a burocracia para pequenas empresas; Incentivar parcerias público-privadas para desenvolvimento regional."
     },
     {
       "id": "5",
-      "nome": "Luis inacio",
-      "numero": "13",
-      "partido": "Dos ladrao",
-      "biografia": "FAZ O L",
-      "propostas": "Colocar mais imposto e roubar todo mundo",
-      "like": 5,
-      "disLike": 30
+      "nome": "Carlos Eduardo Santos",
+      "numero": "3141",
+      "partido": "Partido Democrático Trabalhista",
+      "biografia": "Advogado com especialização em direitos trabalhistas e experiência em sindicatos e organizações de trabalhadores.",
+      "propostas": "Fortalecer os direitos dos trabalhadores; Melhorar as condições de trabalho; Criar programas de capacitação profissional."
     },
     {
       "id": "6",
-      "nome": "Fernanda Montenegro",
-      "numero": "3456",
-      "partido": "Partido Social Trabalhista",
-      "biografia": "Filósofa e estudante de gestão política",
-      "propostas": "Melhorias nas vias públicas, saneamento básico de baixos de classe baixa.",
-      "like": 29,
-      "disLike": 17
+      "nome": "Juliana Costa",
+      "numero": "5161",
+      "partido": "Partido Republicano",
+      "biografia": "Professora de História com foco em educação inclusiva e métodos de ensino inovadores para escolas públicas.",
+      "propostas": "Promover a inclusão de alunos com necessidades especiais; Modernizar o currículo escolar; Incentivar métodos de ensino interativos."
     },
     {
-      "id": "15",
-      "nome": "Daniel Sampaio",
-      "numero": "1571",
-      "partido": "Patido raivoso",
-      "biografia": "Desenvolvedor Full Stack Developer",
-      "propostas": "Se tornar o cara mais foda em programação"
+      "id": "7",
+      "nome": "Thiago Martins",
+      "numero": "7181",
+      "partido": "Partido da Justiça Social",
+      "biografia": "Psicólogo com experiência em políticas de saúde mental e desenvolvimento social. Trabalha em instituições públicas e ONGs.",
+      "propostas": "Melhorar o atendimento psicológico em escolas e comunidades; Desenvolver programas de prevenção à saúde mental; Incentivar a pesquisa em saúde mental."
+    },
+    {
+      "id": "8",
+      "nome": "Patricia Lima",
+      "numero": "9202",
+      "partido": "Partido da Ordem Social",
+      "biografia": "Jornalista com experiência em comunicação social e projetos de mídia comunitária. Tem atuado em campanhas de conscientização social.",
+      "propostas": "Fortalecer a mídia comunitária; Incentivar a transparência nas comunicações públicas; Promover campanhas de conscientização sobre direitos civis."
+    },
+    {
+      "id": "9",
+      "nome": "Gustavo Almeida",
+      "numero": "1223",
+      "partido": "Partido Econômico",
+      "biografia": "Especialista em finanças com experiência em políticas fiscais e econômicas. Trabalha com planejamento estratégico para desenvolvimento econômico.",
+      "propostas": "Reduzir a carga tributária para pequenas empresas; Incentivar investimentos em infraestrutura; Modernizar o sistema de arrecadação fiscal."
+    },
+    {
+      "id": "10",
+      "nome": "Mariana Ferreira",
+      "numero": "3242",
+      "partido": "Partido da Nova Visão",
+      "biografia": "Arquiteta com foco em urbanismo sustentável e projetos de revitalização de áreas urbanas. Tem trabalhado em projetos de renovação urbana.",
+      "propostas": "Revitalizar áreas urbanas degradadas; Promover a arquitetura sustentável; Criar espaços públicos acessíveis e inclusivos."
     }
   ]
 }

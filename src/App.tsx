@@ -6,7 +6,7 @@ import Home from './pages/Home';
 
 export default function App() {
   return (
-      <div className="bg-blue-950 p-3 m-auto flex flex-col items-center justify-center flex-1 bg-cover min-h-screen">
+      <div className="bg-blue-950 p-3 m-auto flex flex-col items-center justify-center">
         <Header />
         <Routes>
             <Route path='/admin' element={<Admin />} />
