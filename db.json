@@ -22,7 +22,8 @@
       "numero": "9101",
       "partido": "Partido Verde",
       "biografia": "Ambientalista com graduação em Ciências Ambientais e experiência em projetos de preservação ambiental e energia renovável.",
-      "propostas": "Promover o uso de energias renováveis; Preservar áreas de proteção ambiental; Incentivar a educação ambiental nas escolas."
+      "propostas": "Promover o uso de energias renováveis; Preservar áreas de proteção ambiental; Incentivar a educação ambiental nas escolas.",
+      "like": 3
     },
     {
       "id": "4",
@@ -78,7 +79,8 @@
       "numero": "3242",
       "partido": "Partido da Nova Visão",
       "biografia": "Arquiteta com foco em urbanismo sustentável e projetos de revitalização de áreas urbanas. Tem trabalhado em projetos de renovação urbana.",
-      "propostas": "Revitalizar áreas urbanas degradadas; Promover a arquitetura sustentável; Criar espaços públicos acessíveis e inclusivos."
+      "propostas": "Revitalizar áreas urbanas degradadas; Promover a arquitetura sustentável; Criar espaços públicos acessíveis e inclusivos.",
+      "like": 8
     }
   ]
 }

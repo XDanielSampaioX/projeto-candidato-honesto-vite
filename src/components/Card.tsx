@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaUser } from "react-icons/fa";
-import Modal from "./Modal";
+import ModalLikeAndDisLike from "./ModalLikeAndDisLike";
 import LikeAndDisLike from "./LikeAndDisLike";
 
 export default function Card(props: Candidato) {
@@ -33,7 +33,7 @@ export default function Card(props: Candidato) {
                 </div>
             </button>
 
-            <Modal abrirModal={modalAberto} fecharModal={fecharModal}>
+            <ModalLikeAndDisLike abrirModal={modalAberto} fecharModal={fecharModal}>
                 <div className="flex flex-col justify-center items-center gap-3 mb-4 -m-5">
                     {/* Caso a imagem não esteja setada, o FaUser sera exibido no lugar da imagem */}
                     {props.imagem ?
@@ -44,14 +44,16 @@ export default function Card(props: Candidato) {
                             <FaUser className="w-10 h-10 " />
                         </div>
                     }
-                    <p className="text-xl font-semibold">{props.nome}</p>
-                    <p>Número do partido: {props.numero}</p>
-                    <p>Partido: {props.partido}</p>
-                    <p>{props.biografia}</p>
-                    <p>{props.propostas}</p>
+                    <div className="w-96">
+                        <p className="text-xl font-semibold">{props.nome}</p>
+                        <p>Número do partido: {props.numero}</p>
+                        <p>Partido: {props.partido}</p>
+                        <p>{props.biografia}</p>
+                        <p>{props.propostas}</p>
+                    </div>
                 </div>
                 <LikeAndDisLike id={props.id} nome={props.nome} numero={props.numero} biografia={props.biografia}></LikeAndDisLike>
-            </Modal>
+            </ModalLikeAndDisLike>
         </div>
     );
 }
