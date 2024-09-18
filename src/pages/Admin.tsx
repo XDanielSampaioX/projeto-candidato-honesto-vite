@@ -26,7 +26,7 @@ export default function Admin() {
   // Schema de validação com Yup
   const validationSchema = Yup.object().shape({
     nome: Yup.string().required("O nome é obrigatório"),
-    numero: Yup.number().required("O número do partido é obrigatório").positive("O número precisa ser positivo e maior que zero").integer("O número precisa ser inteiro").min(4, "Número minimo de 4 caracteres"),
+    numero: Yup.string().required("O número do partido é obrigatório").matches(/^[0-9]+$/, "Apenas números são permitidos").max(4, "Número máximo de 4 caracteres"),
     partido: Yup.string().required("O partido é obrigatório"),
     biografia: Yup.string().required("A biografia é obrigatória"),
     propostas: Yup.string().required("As propostas são obrigatórias"),
