@@ -23,6 +23,9 @@ export default function Menu() {
                         <li>
                             <Link to="/admin">Admin</Link>
                         </li>
+                        <li>
+                            <Link to="/sobre">Sobre</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
