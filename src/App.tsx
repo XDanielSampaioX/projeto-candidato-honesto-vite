@@ -3,6 +3,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Admin from './pages/Admin';
 import Home from './pages/Home';
+import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
 
 
@@ -13,6 +14,7 @@ export default function App() {
         <Routes>
             <Route path='/admin' element={<Admin />} />
             <Route path='/Contato' element={<Contato />} />
+            <Route path='/sobre' element={<Sobre />} />
             <Route path='/' element={<Home />} />
         </Routes>
         <Footer/>
