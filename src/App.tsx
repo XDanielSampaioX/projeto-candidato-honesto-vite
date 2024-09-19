@@ -5,6 +5,7 @@ import Admin from './pages/Admin';
 import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
+import PoliticaPri from './pages/PoliticadePrivacidade';
 
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
             <Route path='/Contato' element={<Contato />} />
             <Route path='/sobre' element={<Sobre />} />
             <Route path='/' element={<Home />} />
+            <Route path='/politicadeprivacidade' element={<PoliticaPri />} />
         </Routes>
         <Footer/>
       </div>
