@@ -6,7 +6,7 @@ const Footer = () => {
           <ul className="flex justify-around gap-10 max-sm:flex-col max-sm:gap-2">
             <li>© 2024 - Todos os direitos reservados.</li>
             <div className="flex gap-10 max-sm:flex-col max-sm:gap-2">
-              <li> <button>Política de Privacidade</button> </li>
+              <li> <Link to="/politicadeprivacidade">Política de Privacidade</Link> </li>
               <li> <Link to="/contato">Contato</Link> </li>
             </div>
           </ul>
