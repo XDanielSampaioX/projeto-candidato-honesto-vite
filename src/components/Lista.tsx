@@ -61,7 +61,7 @@ export default function Tbody(props: Candidato) {
           <h2 className="text-xl font-semibold mb-4">Formulário de Cadastro</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex flex-col">
-              <Input id="nome" name="nome" value={formData.nome} onChange={handleChange}></Input>
+              <Input id="nome" name="nome" value={formData.nome} onChange={handleChange} ></Input>
             </div>
             <div className="flex flex-col">
               <Input id="numero" name="numero" value={formData.numero} onChange={handleChange}></Input>
