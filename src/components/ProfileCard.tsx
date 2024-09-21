@@ -1,5 +1,5 @@
 import { memo } from "react";
-import Links from "../assets/Links";
+import Links from "./Links";
 
 type ProfileCardProps = {
     profilePic?: string;
